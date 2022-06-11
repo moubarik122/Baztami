@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:layoutDescription="@xml/motion_scene_splash"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imgView_logo"
+        android:layout_width="124dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="48dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgView_logo_rays"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="44dp"
+
+        android:scaleType="centerInside"
+        android:src="@drawable/icon2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgView_cloudLeft"
+        android:layout_width="87dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="265dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/cloud"
+        android:translationX="-20dp"
+        app:layout_constraintBottom_toTopOf="@+id/cloudLeft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064"
+        app:tint="@color/lightGrey" />
+
+
+    <ImageView
+        android:id="@+id/imgView_cloudRight"
+        android:layout_width="110dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/cloud1"
+        android:translationX="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/lightGrey" />
+
+    <ImageView
+        android:id="@+id/cloudLeft"
+        android:layout_width="95dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/cloud1"
+        android:translationX="-20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linlay_inputs"
+        app:tint="@color/lightGrey" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="101dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/cloud"
+        android:translationX="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linlay_inputs"
+        app:tint="@color/lightGrey" />
+
+    <LinearLayout
+        android:id="@+id/linlay_inputs"
+        android:layout_width="389dp"
+        android:layout_height="349dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="30dp"
+        android:alpha="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgView_cloudRight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="BAZTAMI"
+            android:textColor="#FF5252"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="right"
+            android:text="@string/title_app"
+            android:textColor="@color/textDescription"
+            android:textSize="14sp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:hintEnabled="false">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="16dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false"
+            app:hintAnimationEnabled="false"
+        app:passwordToggleTint="@color/color_password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawableEnd="@drawable/ic_baseline_visibility_24"
+                android:drawableRight="@drawable/ic_baseline_visibility_24"
+                android:drawablePadding="16dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginTop="30dp"
+            android:background="#FF5252"
+            android:text="Login"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/loginQn"
+            android:layout_width="380dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:alpha="1"
+            android:gravity="right"
+            android:text="@string/register_button"
+            android:textColor="@color/textDescription"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linlay_inputs" />
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

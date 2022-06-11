@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Baztami</string>
+
+    <string-array name="items">
+        <item>Select item</item>
+        <item>Transport</item>
+        <item>Food</item>
+        <item>House</item>
+        <item>Entertainment</item>
+        <item>Education</item>
+        <item>Charity</item>
+        <item>Apparel</item>
+        <item>Health</item>
+        <item>Personal</item>
+        <item>Other</item>
+    </string-array>
+    <string name="login_button" translatable="false"><b>LOGIN</b></string>
+    <string name="register_button" translatable="false">Don\'t have an account? <b>Register Here</b></string>
+    <string name="title_app" translatable="false"><b>APP</b></string>
+    <string name="totalamount_0_dh">TotalAmount: 0 Dh</string>
+    <string name="total_budget_amount_0">total Budget amount: 0 Dh</string>
+    <string name="total_week_amount_0">total week amount: 0 Dh</string>
+    <string name="_0">0 Dh</string>
+    <string name="tap_to_add_budget_item">Tap \'+\' to add budget item</string>
+
+
+</resources>
